@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter.ttk import *
 from tkinter import messagebox
-from windows.popup import Popup
+from gui.popup import Popup
 import os
 import json
 from utils.get_file import resource_path

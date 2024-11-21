@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
-from windows.popup import Popup
+from gui.popup import Popup
 
 
 class Timestamp(Popup):

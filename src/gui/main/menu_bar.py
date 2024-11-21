@@ -1,8 +1,8 @@
-from windows.help.about import *
-from windows.others.donors import *
-from windows.options.playback import *
-from windows.options.settings import *
-from windows.others.timestamp import Timestamp
+from gui.help.about import *
+# from gui.others.donors import *
+from gui.options.playback import *
+from gui.options.settings import *
+from gui.others.timestamp import Timestamp
 from utils.record_file_management import RecordFileManagement
 from webbrowser import open as OpenUrl
 from sys import argv
@@ -93,12 +93,12 @@ class MenuBar(Menu):
         # Help section
         self.help_section = Menu(my_menu, tearoff=0)
         my_menu.add_cascade(label=self.text_config["help_menu"]["help_text"], menu=self.help_section)
-        self.help_section.add_command(label=self.text_config["help_menu"]["tutorial_text"], command=lambda: OpenUrl("https://github.com/LOUDO56/PyMacroRecord/blob/main/TUTORIAL.md"))
+        self.help_section.add_command(label=self.text_config["help_menu"]["tutorial_text"], command=lambda: OpenUrl("https://github.com/O-X-L/computer-automation/blob/main/TUTORIAL.md"))
         self.help_section.add_command(label=self.text_config["help_menu"]["website_text"],
                                       command=lambda: OpenUrl("https://www.pymacrorecord.com"))
         self.help_section.add_command(label=self.text_config["help_menu"]["about_text"], command=lambda: About(self, parent, parent.version.version, parent.version.update))
 
         # Other section
-        self.other_section = Menu(my_menu, tearoff=0)
-        my_menu.add_cascade(label=self.text_config["others_menu"]["others_text"], menu=self.other_section)
-        self.other_section.add_command(label=self.text_config["others_menu"]["donors_text"], command=lambda: Donors(self, parent))
+        # self.other_section = Menu(my_menu, tearoff=0)
+        # my_menu.add_cascade(label=self.text_config["others_menu"]["others_text"], menu=self.other_section)
+        # self.other_section.add_command(label=self.text_config["others_menu"]["donors_text"], command=lambda: Donors(self, parent))

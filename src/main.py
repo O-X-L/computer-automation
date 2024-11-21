@@ -1,4 +1,4 @@
-from windows import MainApp
+from gui import MainApp
 from sys import platform
 
 if platform.lower() == "win32":

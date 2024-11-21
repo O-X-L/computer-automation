@@ -4,7 +4,7 @@ from tkinter.ttk import *
 
 from requests import RequestException
 
-from windows.popup import Popup
+from gui.popup import Popup
 import requests
 from sys import platform
 from webbrowser import open_new
