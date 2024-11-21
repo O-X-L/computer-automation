@@ -150,7 +150,7 @@ class MainApp(App):
             if wantToSave:
                 RecordFileManagement(self, self.menu).save_macro()
 
-            elif wantToSave == None:
+            elif wantToSave is None:
                 return
 
         if platform.lower() != 'darwin':
